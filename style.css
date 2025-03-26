@@ -138,9 +138,15 @@ button:hover{
     color: white;
 }
 
+.menu {
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+}
 
-/* Verberg op mobiel (max 9008px) */
-@media (max-width: 900px) {
+/* Verberg op mobiel (max 768px) */
+@media (max-width: 1000px) {
     .header_mobile{
         margin-top: 20px;
         margin-bottom: 20px;
@@ -165,11 +171,29 @@ button:hover{
         display: flex;
         justify-content:center;
     }
+
+    #box1, #box2 {
+        width: 46%;
+    }
+    .menu{
+        width: auto;
+        font-size: 14px;
+    }
+    button{
+        padding: 0;
+    }
+    .order-button {
+        margin-right: 30px;
+    }
+    .plus, .min, .plus_menu{
+        width: 18px;
+        height: 18px;
+    }
     
 }
 
-/* Verberg op desktop (min 901px) */
-@media (min-width: 901px) {
+/* Verberg op desktop (min 769px) */
+@media (min-width: 1001px) {
     .header_desktop{
         margin-top: 20px;
         margin-bottom: 20px;
@@ -210,14 +234,6 @@ button:hover{
     color: darkgreen
 }
 
-
-.menu {
-    width: 250px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-    text-align: left;
-}
 
 .menu ul {
     list-style: none;

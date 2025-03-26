@@ -139,8 +139,8 @@ button:hover{
 }
 
 
-/* Verberg op mobiel (max 768px) */
-@media (max-width: 768px) {
+/* Verberg op mobiel (max 9008px) */
+@media (max-width: 900px) {
     .header_mobile{
         margin-top: 20px;
         margin-bottom: 20px;
@@ -168,8 +168,8 @@ button:hover{
     
 }
 
-/* Verberg op desktop (min 769px) */
-@media (min-width: 769px) {
+/* Verberg op desktop (min 901px) */
+@media (min-width: 901px) {
     .header_desktop{
         margin-top: 20px;
         margin-bottom: 20px;

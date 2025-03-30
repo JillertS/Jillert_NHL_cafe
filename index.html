@@ -3,35 +3,70 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NHL Café - Startpagina</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Header desktop -->
-    <header>
-    <div class="header_desktop">
-        <h3 class="auto_align">     NHL Café            </h3>
-        <p class="auto_align" id="selected_page">     Bestellen           </p>
 
-        <button class="navigation"><a href="overzicht.html">Overzicht</a></button>
-        <button class="navigation"><a href="alles_betalen.HTML"> Alles betalen </a> </button>
-        <button class="navigation"><a href="per_persoon_betalen.HTML"> Per persoon betalen </a> </button>
+    <!-- Header desktop -->
+<header>
+    <div class="container" id="header_desktop">
+        
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <h3>NHL Café</h3>
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-2">
+            <p id="selected_page">     Bestellen           </p>
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-2">
+            <button class="navigation"><a href="overzicht.html">Overzicht</a></button>
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-2">
+            <button class="navigation"><a href="alles_betalen.HTML"> Alles betalen </a> </button>
+        </div>
+
+        <div class="col-lg-2 col-md-2 col-sm-2">
+            <button class="navigation"><a href="per_persoon_betalen.HTML"> Per persoon betalen </a> </button>
+        </div>
     </div>
 
     <!-- Header mobile -->
-    <div class="header_mobile">
-        <h3 class="nhl_mobile">     NHL Café            </h3>
-        <button class="hamburger_menu">☰</button>
+    <div id="header_mobile" class="container">
+            <div class="col-md-6 col-xs-6">
+                <h3>NHL Café</h3>
+            </div>
+            <div class="col-md-6 col-xs-6 text-right">
+                <button class="hamburger_menu">☰</button>
+            </div>
     </div>
-    </header>
+</header>
 
-    <h1>Bestellen</h1> <!--Bestellen-->
+<!-- End Header -->
 
+
+    <!--TITLE-->
     <div class="container">
+    <div class="col-lg-12">
+        <h1>Bestellen</h1>
+    </div>
+    </div>
+</div>
+
+<div class="container">
 
         <!--Product-->
-        <div class="box" id="box1">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="menu">
             <ul>
                 <li>Frisdrank</li>
@@ -45,7 +80,7 @@
         </div>
 
         <!--Hoe bereid-->
-        <div class="box" id="box2">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="menu">
                 <ul>
                     <li> Normaal <button class="plus_menu">+</button></li>
@@ -58,7 +93,7 @@
         </div>
 
         <!--Winkelmand-->
-        <div class="box" id="box3">
+        <div class="col-lg-12">
             <table>
                 <thead>
                     <tr id="tr1">
@@ -94,19 +129,18 @@
             <button class="order-button">Bestel</button>
         </div>
     </div>
+<footer>
+    <div class="container">
     <div class="burger">
         <div>
             <div><p> ☰ Hamburger menu </p></div>
-            <button class="navigation"><a href="index.html">Bestellen  </a></button>
-            <button class="navigation"><a href="overzicht.html">Overzicht   </a></button>
-            <button class="navigation"><a href="alles_betalen.HTML"> Alles betalen </a> </button>
-            <button class="navigation"><a href="per_persoon_betalen.HTML"> Per persoon betalen   </a> </button>
+            <button class="navigation"><a href="INDEX.html">Bestellen  </a></button>
+            <button class="navigation"><a href="OVERZICHT.html">Overzicht   </a></button>
+            <button class="navigation"><a href="ALLES_BETALEN.HTML"> Alles betalen </a> </button>
+            <button class="navigation"><a href="PER_PERSOON_BETALEN.HTML"> Per persoon betalen   </a> </button>
         </div>
        </div>
-</body>
-
-<footer>
-    <div class="TM">NHL Café®</div>
+</div>
 </footer>
 
 </html>

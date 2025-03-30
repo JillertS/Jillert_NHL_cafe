@@ -2,24 +2,18 @@
     box-sizing: border-box;
   }
 
-body, h1, h2, h3, p, button, a, header, .box{
+body, h1, h2, h3, p, button, a, header{
     font-family: Roboto, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     color: #2f4f4f;
-}
-h1{
-    text-align: left;
-    margin-left: 5%;
+    
 }
 
-.auto_align{
-    margin:auto;
-}
 
-.navigation, .nhl_mobile{
+.navigation, .nhl_mobile, #selected_page{
     border: 0;
     background-color: transparent;
     margin:auto;
-
+    padding-top: 20px;
 }
 
 .navigation:hover{
@@ -27,42 +21,11 @@ h1{
 }
 
 .container{
-    display: flex;
+    display: block;
     flex-direction: row;
     flex-wrap: wrap;
-}
+    justify-content: left;
 
-.box{
-
-    text-align: center;
-    border-radius: 15px;
-    margin-bottom: 2%; 
-}
-
-#box1{
-    margin-left: 5%;
-    width: 250px;
-    margin-right: 2%;
-
-}
-#box2{
-
-    width: 250px;
-    margin-right: -3%;
-
-}
-#box3{
-
-    width: 500px;
-    margin-left: 5%;
-}
-
-#box4{
-
-    max-width: 1250px;
-    width: 100%;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 
@@ -124,8 +87,9 @@ float: right;
 .hamburger_menu{
     padding: 15px;
     background-color: transparent;
-    border: #2f4f4f solid 1px;
+    border: #4d7070 solid 1px;
     border-radius: 5px;
+    margin: 10px;
 }
 
 button:hover{
@@ -139,75 +103,9 @@ button:hover{
 }
 
 .menu {
-    width: 250px;
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: left;
-}
-
-/* Verberg op mobiel (max 768px) */
-@media (max-width: 1000px) {
-    .header_mobile{
-        margin-top: 20px;
-        margin-bottom: 20px;
-    
-        display: flex;
-        justify-content:center;
-    }
-    .header_desktop{
-        display: none;
-    }
-    .nhl_mobile{
-        margin-left: 5%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .burger{
-        bottom: 0;
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    
-        display: flex;
-        justify-content:center;
-    }
-
-    #box1, #box2 {
-        width: 46%;
-    }
-    .menu{
-        width: auto;
-        font-size: 14px;
-    }
-    button{
-        padding: 0;
-    }
-    .order-button {
-        margin-right: 30px;
-    }
-    .plus, .min, .plus_menu{
-        width: 18px;
-        height: 18px;
-    }
-    
-}
-
-/* Verberg op desktop (min 769px) */
-@media (min-width: 1001px) {
-    .header_desktop{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        display: flex;
-        justify-content:center;
-        max-width: 1400px;
-    }
-    .header_mobile{
-        display: none;
-    }
-    .burger{
-        display: none;
-    }
-    
 }
 
 #selected_page{
@@ -253,7 +151,77 @@ button:hover{
 
 .TM{
     bottom: 0;
-    position:absolute;
     font-style: italic;
     padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Only op mobile (max 768px) */
+@media (max-width: 768px) {
+
+    #header_desktop{
+        display: none;
+    }
+
+    .burger{
+        bottom: 0;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .menu{
+        width: auto;
+        font-size: 14px;
+        margin-bottom: 20px;
+
+    }
+
+    .order-button {
+        margin-right: 30px;
+    }
+    .plus, .min, .plus_menu{
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+    }
+}
+    
+
+
+
+/* Only on desktop (min 769px) */
+@media (min-width: 769px) {
+    #header_desktop{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content:center;
+        max-width: 1400px;
+    }
+    #header_mobile, .burger{
+        display: none;
+    }
+    
 }
